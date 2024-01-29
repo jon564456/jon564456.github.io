@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 40%;
+    background-color: #212121;
+    display: block;
+    align-items: center;
+    box-shadow: 3px 0px 3px rgba(33, 33, 33, .5);
+}
+
+.principal{
+    margin: 1rem;
+}
+
+.header-titulo {
+    font-size: 2rem;
+    flex-direction: row;
+    padding: 1rem;
+    color: white;
+}
+
+.header-img {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.header-img:hover {
+    transform: scale(1.1);
+}
+
+.header img {
+    width: 100px;
+    padding: 2rem;
+}
+
+.header h1 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: #212121;
+}
+
+.texto-resultado {
+    margin: 1rem;
+}
+
+.contenedor-buscador {
+    width: 100%;
+    margin: 1rem;
+}
+
+.div-buscador {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.div-buscador input {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.contenedor-elementos {
+    width: 100%;  
+    display: grid;
+    align-items: center;
+}
+
+.row {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.row:hover {
+    transform: scale(1);
+    border: .2rem solid #D8DEE9;
+}
+
+
+.div-video {
+    margin: 1rem;
+}
+
+.div-icono {
+    margin: 3rem;
+}
+
+.div-texto {
+    text-align: start;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    color: #212121;
+}

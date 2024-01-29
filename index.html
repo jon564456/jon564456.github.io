@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/b1f3d5c1f6.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="core/manifest.json">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-img">
+                <img src="img/053-medium.svg" alt="">
+            </div>
+            <h2 class="header-titulo">Lista video</h2>
+        </header>
+        <section class="principal">
+
+            <div class="contendor-buscador">
+                <div class="div-buscador">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                    <input type="search" class="buscador" id="buscador" placeholder="Teclee su busqueda">
+                </div>
+            </div>
+            <section class="lista-video">
+                <h2 class="texto-resultado">19 Videos</h2>
+                <div class="contenedor-elementos" id="contenedor-video">
+                </div>
+            </section>
+        </section>
+    </main>
+
+</body>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../js/sw.js')
+            .then((registration) => {
+                console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch((error) => {
+                console.log('Error al registrar el Service Worker:', error);
+            });
+    }
+</script>
+<script src="js/lista.js"></script>
+
+</html>
