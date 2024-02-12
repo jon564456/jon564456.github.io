@@ -5,12 +5,12 @@ self.addEventListener('install', (event) => {
         caches.open(CACHE_NAME)
             .then((cache) => {
                 return cache.addAll([
-                    './',
-                    '../index.html',
-                    '../core/manifest.json',
-                    '../css/estilos.css',
-                    '../img/053-medium.svg',
-                    '../js/lista.js'
+                    '/Formulario',
+                    '/Formulario/index.html',
+                    '/Formulario/core/manifest.json',
+                    '/Formulario/css/estilos.css',
+                    '/Formulario/img/logo.png',
+                    '/Formulario/js/formulario.js'
                     // Agrega aquí otros recursos que quieras que se almacenen en la caché
                 ]);
             })

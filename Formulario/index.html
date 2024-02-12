@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="manifest" href="core/manifest.json">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <main class="contenedor" id="contendor">
+      <div class="contenedor-form">
+        <h2>Formulario</h2>
+        <form id="formulario">
+          <div class="contenedor-formulario" id="contenedor-formulario">
+            <label for="select-pais">País:</label>
+            <select name="select-pais" id="select-pais"> </select>
+            <label for="select-estado">Estado:</label>
+            <select name="select-estado" id="select-estado"></select>
+            <label for="select-municipio">Municipio:</label>
+            <select name="select-municipio" id="select-municipio"></select>
+            <label for="select-localidad">Localidad:</label>
+            <select name="select-localidad" id="select-localidad"></select>
+            <button class="btn" id="btn-enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/Formulario/js/sw.js')
+            .then((registration) => {
+                console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch((error) => {
+                console.log('Error al registrar el Service Worker:', error);
+            });
+    }
+</script>
+  <script src="js/formulario.js"></script>
+</html>
