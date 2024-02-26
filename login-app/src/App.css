@@ -1,0 +1,60 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo {
+  color: #61DAFB;
+  text-align: center;
+
+}
+
+#formulario {
+  width: 500px;
+  height: 200px;
+  background-color: #ECEFF4;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 50px;
+  box-shadow: 4px 4px 4px  rgba(21, 21,21, 0.5);
+}
+
+.grupo-componentes {
+  width: 100%;
+  background-color: #D8DEE9;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 100%;
+  border: 0 none;
+  height: 40px;
+  outline: none;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+.btn {
+  width: 100%;
+  height: 30px;
+  border: 0 none;
+  border-radius: 10px;
+}
+.btn-blue{
+  color: white;
+  margin-top: 10px;
+  background-color: #61DAFB;
+}
